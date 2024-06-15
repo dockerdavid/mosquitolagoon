@@ -1,12 +1,14 @@
 .gridContainerSection2 {
     position: relative;
     width: 100%;
-    display: grid;
-    gap: 20px;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 1fr);
     padding: 35px 20px;
-    place-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .gridContainerSection2::before {
@@ -20,9 +22,18 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed; /* Mantiene el efecto parallax */
+    background-attachment: fixed;
     filter: brightness(0.5);
     z-index: -1;
+}
+
+.cards {
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    place-items: center;
 }
 
 .cardDetail * {
@@ -50,7 +61,8 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 
-    .gridContainerSection2 {
+    .cards {
+        width: clamp(768px, 90%, 1200px);
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
     }
@@ -69,7 +81,8 @@
 
 @media screen and (min-width: 1025px) {
     
-    .gridContainerSection2 {
+    .cards {
+        width: clamp(768px, 90%, 1200px);
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(1, 1fr);
         padding: 75px 0;
