@@ -22,6 +22,14 @@ body {
 
 :root {
 	--unitFontSize: 1rem;
+
+	--gray1: #929696;
+	--gray2: #C3C3C5;
+	--gray3: #474E4F;
+
+	--white1: #FEFEFE;
+
+	--blue: #6087A0;
 }
 
 

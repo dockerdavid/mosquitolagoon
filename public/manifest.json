@@ -1,6 +1,6 @@
 {
-	"short_name": "Base",
-	"name": "Base",
+	"short_name": "Mosquito",
+	"name": "Mosquito Lagoon Farmstead",
 	"icons": [
 		{
 			"src": "favicon.ico",
@@ -29,8 +29,8 @@
 	"splash_pages": null,
 	"start_url": "/",
 	"display": "standalone",
-	"theme_color": "#000000",
-	"background_color": "#ffffff",
+	"theme_color": "#6087A0",
+	"background_color": "#FEFEFE",
     "orientation": "portrait",
     "scope": "/",
     "prefer_related_applications": false,
