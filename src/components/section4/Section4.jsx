@@ -2,7 +2,7 @@ import './section4.css'
 
 const Section4 = () => {
 	return (
-		<div>
+		<div className='containerSection4'>
 			<h2>section4</h2>
 
 			<div className='gridContainer'>
