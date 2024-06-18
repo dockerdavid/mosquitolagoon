@@ -57,7 +57,7 @@ const Section1 = () => {
 			</div>
 
 			<div className='containerSection1'>
-				<img src={require("src/assets/img/section1/1.jpg")} alt="home image" loading='eager' />
+				<img src={require("src/assets/img/section1/1.webp")} alt="home image" loading='eager' />
 				<div className='section1'>
 					<h1>
 						Best School <br/>

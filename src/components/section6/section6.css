@@ -1,5 +1,5 @@
 .containerSection6 {
-	height: 70vh;
+	height: 55vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
@@ -16,6 +16,7 @@
 
 .containerSection6Text {
 	width: 50%;
+	height: 80%;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
@@ -34,10 +35,9 @@
 
 .containerForm {
 	width: 50%;
-	height: 100%;
+	height: 80%;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 }
 
@@ -88,7 +88,11 @@
 
 .formContact textarea {
 	width: 100%;
+	min-width: 100%;
+	max-width: 100%;
 	height: 100px;
+	min-height: 100px;
+	max-height: 150px;
 	padding: 10px;
 	border: 1px solid var(--gray2);
 }
@@ -102,9 +106,56 @@
 }
 
 .formContact button {
-	width: 100%;
+	width: fit-content;
 	background-color: var(--gray3);
-	border: none;
 	border-radius: 5px;
-	padding: 10px 20px;
+	padding: 10px 40px;
+}
+
+.formContact button span {
+	color: var(--white1);
+	font-size: calc(var(--unitFontSize) * 1);
+}
+
+/* tablets */
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+	.containerSection6 {
+		height: auto;
+	}
+
+	.section6 {
+		flex-direction: column;
+		align-items: center;
+		padding: 10vw;
+	}
+
+	.containerSection6Text {
+		width: 100%;
+	}
+
+	.containerForm {
+		width: 100%;
+	}
+}
+
+/* mobiles */
+@media screen and (max-width: 768px) {
+	.containerSection6 {
+		height: auto;
+	}
+
+	.section6 {
+		width: 100%;
+		flex-direction: column;
+		align-items: center;
+		padding: 10vw;
+	}
+
+	.containerSection6Text {
+		width: 100%;
+	}
+
+	.containerForm {
+		width: 100%;
+	}
 }

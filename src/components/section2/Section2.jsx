@@ -5,7 +5,7 @@ const Section2 = () => {
 		<div className='containerSection2'>
 			<div className='section2'>
 				<div className='sectionImg'>
-					<img src={require("src/assets/img/section2/1.jpg")} alt="section 2 image" />
+					<img src={require("src/assets/img/section2/1.webp")} alt="section 2 image" />
 				</div>
 				<div className='containerSection2Text'>
 					<div className='containerSection2Header'>
