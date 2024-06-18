@@ -9,9 +9,20 @@
 	font: inherit;
 	text-decoration: none;
 	vertical-align: baseline;
-	list-style: none;
 
 	box-sizing: border-box;
+	line-height: normal;
+}
+
+ul {
+	list-style: none;
+}
+
+button {
+	border: none;
+	outline: none;
+	cursor: pointer;
+	background-color: transparent;
 }
 
 html {
@@ -30,17 +41,24 @@ body {
 	--gray3: #474E4F;
 
 	--white1: #FEFEFE;
+	--whiteSoft: rgba(254, 254, 254, 0.6);
 
 	--blue: #6087A0;
-}
 
+	--black1: #191919;
+	--blackSoft: rgba(25, 25, 25, 0.6);
+}
 
 /* tablets */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
-	
+	:root {
+		--unitFontSize: 0.9rem;
+	}
 }
 
 /* mobiles */
 @media screen and (max-width: 768px) {
-
+	:root {
+		--unitFontSize: 0.8rem;
+	}
 }

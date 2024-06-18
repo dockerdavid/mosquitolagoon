@@ -1,0 +1,110 @@
+.containerSection5 {
+	height: 70vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.section5 {
+	width: clamp(768px, 90%, 1200px);
+	height: 100%;
+	padding-block: 10vh;
+	display: flex;
+	justify-content: center;
+	gap: 2vw;
+}
+
+.containerSection5Text {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.containerSection5Text > h2 {
+	font-size: calc(var(--unitFontSize) * 3.5);
+	line-height: 1;
+	color: var(--blue);
+}
+
+.containerSection5Text > p {
+	font-size: calc(var(--unitFontSize) * 1);
+	color: var(--gray3);
+}
+
+.containerForm {
+	width: 50%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.formContact {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.containerInput {
+	width: 100%;
+	display: flex;
+	gap: 10px;
+}
+
+.containerInput input {
+	width: 50%;
+	height: 50px;
+	padding-inline: 10px;
+	color: var(--blue);
+	border: 1px solid var(--gray2);
+}
+
+.containerInput input::placeholder {
+	color: var(--blue);
+}
+
+.containerInput input:focus {
+	outline: none;
+}
+
+.formContact select {
+	width: 100%;
+	height: 50px;
+	padding-inline: 10px;
+	color: var(--blue);
+	border: 1px solid var(--gray2);
+}
+
+.formContact select:focus {
+	outline: none;
+}
+
+.formContact select option {
+	color: var(--blue);
+}
+
+.formContact textarea {
+	width: 100%;
+	height: 100px;
+	padding: 10px;
+	border: 1px solid var(--gray2);
+}
+
+.formContact textarea::placeholder {
+	color: var(--blue);
+}
+
+.formContact textarea:focus {
+	outline: none;
+}
+
+.formContact button {
+	width: 100%;
+	background-color: var(--gray3);
+	border: none;
+	border-radius: 5px;
+	padding: 10px 20px;
+}
