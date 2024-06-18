@@ -49,13 +49,13 @@ const Section1 = () => {
 					</ul>
 
 					<button className='btnSearch'>
-						<span class="material-symbols-outlined">search</span>
+						<span className="material-symbols-outlined">search</span>
 					</button>
 				</nav>
 			</div>
 
 			<div className='containerSection1'>
-				<img src={require("src/assets/img/section1/1.webp")} alt="home image" loading='eager' />
+				<img src={require("src/assets/img/1.webp")} alt="home image" loading='eager' />
 				<div className='section1'>
 					<h1>
 						Best School <br/>

@@ -43,7 +43,6 @@
 	flex-direction: column;
 	justify-content: center;
 	padding-inline: 20px;
-	gap: 5px;
 }
 
 .containerFooterLinks span {
@@ -56,6 +55,7 @@
 .containerFooterLinks a {
 	font-size: calc(var(--unitFontSize) * 1);
 	color: var(--white1);
+	padding-block: 4px;
 }
 
 /* tablets */

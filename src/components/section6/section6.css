@@ -70,6 +70,11 @@
 	outline: none;
 }
 
+.formContact label {
+	height: 0;
+	overflow: hidden;
+}
+
 .formContact select {
 	width: 100%;
 	height: 50px;
