@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 15px;
 }
 
 .titlePlans {
@@ -10,14 +11,229 @@
     font-size: 2.5rem;
     font-weight: 700;
     color: var(--gray3);
-    margin-bottom: 2rem;
 }
 
 .plansGridContainer {
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
 }
 
+.cardPlan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 20px;
+}
 
+.planHeader {
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px;
+    overflow: hidden;
+}
+
+.cardPlan:nth-child(1) .planHeader {
+    background-color: var(--gray3);
+}
+
+.cardPlan:nth-child(2) .planHeader {
+    background-color: var(--blue);
+}
+
+.cardPlan:nth-child(3) .planHeader {
+    background-color: var(--gray3);
+}
+
+.planHeaderSale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    top: 15px;
+    right: -125px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color: var(--blackSoft);
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+.planHeaderSaleText {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1rem;
+    color: var(--white1);
+}
+
+.planHeaderType {
+    margin-top: 30px;
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.5rem;
+    color: var(--white1);
+}
+
+.planHeaderDescription {
+    font-family: "Alegreya Sans SC", sans-serif;
+    font-size: 1.5rem;
+    color: var(--white1);
+}
+
+.planBody {
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px 50px;
+    gap: 25px;
+    border: 1px solid var(--gray2);
+}
+
+.planBodyPrice {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 4.5rem;
+    color: var(--gray3);
+}
+
+.planBodyPerMonth {
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.5rem;
+    color: var(--gray3);
+}
+
+.planBodyBookNow {
+    padding: 10px 20px;
+    color: var(--white1);
+    font-family: "Darker Grotesque", sans-serif;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.cardPlan:nth-child(1) .planBodyBookNow {
+    background-color: var(--gray3);
+}
+
+.cardPlan:nth-child(2) .planBodyBookNow {
+    background-color: var(--blue);
+}
+
+.cardPlan:nth-child(3) .planBodyBookNow {
+    background-color: var(--gray3);
+}
+
+/* tablets */
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .containerSection5 {
+        padding: 35px 20px;
+    }
+
+    .plansGridContainer {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .cardPlan {
+        padding: 0;
+    }
+
+    .planHeader {
+        padding: 20px;
+    }
+
+    .planHeaderSale {
+        width: 200px;
+        right: -75px;
+    }
+
+    .planHeaderSaleText {
+        font-size: 1rem;
+    }
+
+    .planHeaderType {
+        font-size: 1.25rem;
+    }
+
+    .planHeaderDescription {
+        font-size: 1.25rem;
+    }
+
+    .planBody {
+        padding: 20px;
+    }
+
+    .planBodyPrice {
+        font-size: 3.5rem;
+    }
+
+    .planBodyPerMonth {
+        font-size: 1.25rem;
+    }
+
+    .planBodyBookNow {
+        font-size: 1.25rem;
+    }
+}
+
+/* desktops */
+
+@media screen and (min-width: 1025px) {
+    .containerSection5 {
+        padding: 75px 0;
+    }
+
+    .plansGridContainer {
+        width: clamp(768px, 90%, 1200px);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+    }
+
+    .cardPlan {
+        padding: 0;
+    }
+
+    .planHeader {
+        padding: 20px 50px;
+    }
+
+    .planHeaderSale {
+        width: 300px;
+        right: -125px;
+    }
+
+    .planHeaderSaleText {
+        font-size: 1rem;
+    }
+
+    .planHeaderType {
+        font-size: 1.5rem;
+    }
+
+    .planHeaderDescription {
+        font-size: 1.5rem;
+    }
+
+    .planBody {
+        padding: 20px 50px;
+    }
+
+    .planBodyPrice {
+        font-size: 4.5rem;
+    }
+
+    .planBodyPerMonth {
+        font-size: 1.5rem;
+    }
+
+    .planBodyBookNow {
+        font-size: 1.5rem;
+    }
+}
