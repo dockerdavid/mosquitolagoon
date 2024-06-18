@@ -2,9 +2,9 @@ import './section6.css'
 
 const Section6 = () => {
 	return (
-		<div className='containerSection5'>
-			<div className='section5'>
-				<div className='containerSection5Text'>
+		<div className='containerSection6'>
+			<div className='section6'>
+				<div className='containerSection6Text'>
 					<h2>Lets Talk With Us</h2>
 					<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore, odio odit sapiente sed eum rerum optio blanditiis. Laboriosam, dolores blanditiis?</p>
 				</div>

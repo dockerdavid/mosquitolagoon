@@ -1,11 +1,11 @@
-.containerSection5 {
+.containerSection6 {
 	height: 70vh;
 	width: 100%;
 	display: flex;
 	justify-content: center;
 }
 
-.section5 {
+.section6 {
 	width: clamp(768px, 90%, 1200px);
 	height: 100%;
 	padding-block: 10vh;
@@ -14,20 +14,20 @@
 	gap: 2vw;
 }
 
-.containerSection5Text {
+.containerSection6Text {
 	width: 50%;
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
 }
 
-.containerSection5Text > h2 {
+.containerSection6Text > h2 {
 	font-size: calc(var(--unitFontSize) * 3.5);
 	line-height: 1;
 	color: var(--blue);
 }
 
-.containerSection5Text > p {
+.containerSection6Text > p {
 	font-size: calc(var(--unitFontSize) * 1);
 	color: var(--gray3);
 }
