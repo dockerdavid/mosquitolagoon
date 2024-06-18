@@ -38,7 +38,7 @@
 
 .cardDetail * {
     color: var(--white1);
-    font-family: "Darker Grotesque", sans-serif;
+    font-family: var(--themeFontFamily2);
     text-align: center;
     position: relative;
     z-index: 1;

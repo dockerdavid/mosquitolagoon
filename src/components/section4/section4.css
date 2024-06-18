@@ -4,6 +4,7 @@
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
+	margin-top: 10vh;
 }
 
 .gridContainer {
@@ -11,7 +12,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 1fr);
-    grid-gap: 20px;
+    grid-gap: 50px 5px;
     place-items: center;
 }
 
@@ -30,39 +31,39 @@
 }
 
 .service h3 {
-    font-size: 1.5rem;
-    color: var(--gray3);
+	font-size: calc(var(--unitFontSize) * 1.5);
+    color: var(--blue);
 }
 
 .service span {
-    font-size: 1rem;
-    color: var(--gray3);
+	font-size: calc(var(--unitFontSize) * 1);
+    color: var(--black1);
     text-align: center;
 }
 
 .service button {
-    font-family: "Alegreya Sans SC", sans-serif;
-    border-radius: 3px;
-    padding: 10px 20px;
-    font-size: 1rem;
-    color: var(--white1);
-    background-color: var(--gray3);
+	width: fit-content;
+	background-color: var(--gray3);
+	border-radius: 5px;
+	padding: 10px 20px;
+
+	color: var(--white1);
+	font-size: calc(var(--unitFontSize) * 1);
 }
 
 .serviceTitle {
-    font-family: "Alegreya Sans SC", sans-serif;
+    font-family: var(--themeFontFamily1);
     font-weight: 300;
     font-style: normal;
 }
 
 .serviceDescription {
-    font-family: "Darker Grotesque", sans-serif;
+    font-family: var(--themeFontFamily2);
     font-weight: 100;
     font-style: normal;
 }
 
 /* tablets */
-
 @media screen and (min-width: 769px) and (max-width: 1024px) {
     .gridContainer {
 		width: clamp(768px, 90%, 1200px);
@@ -72,19 +73,6 @@
 
     .service {
         padding: 10px 20px;
-    }
-
-    .service h3 {
-        font-size: 1.4rem;
-    }
-
-    .service span {
-        font-size: 0.9rem;
-    }
-
-    .service button {
-        padding: 8px 16px;
-        font-size: 0.9rem;
     }
 
     .serviceTitle {
@@ -97,7 +85,6 @@
 }
 
 /* desktops */
-
 @media screen and (min-width: 1025px) {
     .gridContainer {
 		width: clamp(768px, 90%, 1200px);
@@ -107,19 +94,6 @@
 
     .service {
         padding: 10px 10px;
-    }
-
-    .service h3 {
-        font-size: 1.3rem;
-    }
-
-    .service span {
-        font-size: 0.8rem;
-    }
-
-    .service button {
-        padding: 6px 12px;
-        font-size: 0.8rem;
     }
 
     .serviceTitle {

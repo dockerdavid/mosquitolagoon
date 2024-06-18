@@ -25,9 +25,7 @@ const Section1 = () => {
 						<span translate='no' className="material-symbols-outlined">menu</span>
 					</button>
 
-					<label className="logo">
-						<h1>hello hola sayunara</h1>
-					</label>
+					<img className='logoNav' src={require('src/assets/img/logo2.png')} alt='logo' />
 
 					<ul className={`containerList ${isOpen ? "opennav" : "closenav"}`}>
 						<li>

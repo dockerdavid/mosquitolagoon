@@ -5,9 +5,7 @@ const Footer = () => {
 		<footer className='footer'>
 			<div className="footerContent">
 				<div className='containerFooterLogo'>
-					<label className="logo">
-						<h1>hello hola sayunara</h1>
-					</label>
+					<img className='logoFooter' src={require('src/assets/img/logo2.png')} alt='logo' />
 					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum atque minima harum voluptate deleniti velit facere minus eum quo.</p>
 				</div>
 

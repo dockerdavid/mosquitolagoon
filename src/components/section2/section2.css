@@ -113,6 +113,10 @@
 
 /* mobiles */
 @media screen and (max-width: 768px) {
+	.containerSection2 {
+		height: auto;
+	}
+
 	.section2 {
 		width: 100%;
 	}

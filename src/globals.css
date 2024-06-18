@@ -33,8 +33,9 @@ body {
 	line-height: 1;
 }
 
+
 :root {
-	--unitFontSize: 1rem;
+	--unitFontSize: 1.1rem;
 
 	--gray1: #929696;
 	--gray2: #C3C3C5;
@@ -47,18 +48,26 @@ body {
 
 	--black1: #191919;
 	--blackSoft: rgba(25, 25, 25, 0.6);
+
+	--themeFontFamily1: "Alegreya Sans SC", sans-serif;
+	--themeFontFamily2: "Darker Grotesque", sans-serif;
+}
+
+span, strong, a, button, p, h1, h2, h3, h4, h5, h6 {
+	font-family: var(--themeFontFamily2);
+	line-height: 1;
 }
 
 /* tablets */
 @media screen and (min-width: 769px) and (max-width: 1024px) {
 	:root {
-		--unitFontSize: 0.9rem;
+		--unitFontSize: 1.05rem;
 	}
 }
 
 /* mobiles */
 @media screen and (max-width: 768px) {
 	:root {
-		--unitFontSize: 0.8rem;
+		--unitFontSize: 0.95rem;
 	}
 }

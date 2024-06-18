@@ -25,9 +25,10 @@
 	gap: 10px;
 }
 
-.containerFooterLogo label {
-	font-size: calc(var(--unitFontSize) * 2);
-	color: var(--white1);
+.containerFooterLogo img {
+	max-width: 12vw;
+	border-radius: 5px;
+	object-fit: contain;
 }
 
 .containerFooterLogo p {
@@ -66,6 +67,10 @@
 	.containerFooterLinks {
 		padding-inline: 10px;
 	}
+
+	.containerFooterLogo img {
+		max-width: 20vw;
+	}
 }
 
 /* mobiles */
@@ -92,5 +97,9 @@
 	.containerFooterLinks {
 		padding-inline: 5px;
 		gap: 2px;
+	}
+
+	.containerFooterLogo img {
+		max-width: 30vw;
 	}
 }

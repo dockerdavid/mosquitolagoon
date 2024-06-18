@@ -3,14 +3,13 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 15px;
+    gap: 30px;
 }
 
 .titlePlans {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-size: 2.5rem;
-    font-weight: 700;
-    color: var(--gray3);
+	font-size: calc(var(--unitFontSize) * 3.5);
+	line-height: 1;
+	color: var(--blue);
 }
 
 .plansGridContainer {
@@ -18,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    gap: 1rem;
+    gap: 30px;
 }
 
 .cardPlan {
@@ -38,6 +37,7 @@
     align-items: center;
     padding: 20px 50px;
     overflow: hidden;
+	gap: 10px;
 }
 
 .cardPlan:nth-child(1) .planHeader {
@@ -62,26 +62,25 @@
     position: absolute;
     transform: rotate(45deg);
     background-color: var(--blackSoft);
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-size: 1.5rem;
+	padding-block: 5px;
 }
 
 .planHeaderSaleText {
-    font-family: "Darker Grotesque", sans-serif;
-    font-size: 1rem;
+    font-family: var(--themeFontFamily2);
+    font-size: calc(var(--unitFontSize) * 0.8);
     color: var(--white1);
 }
 
 .planHeaderType {
     margin-top: 30px;
-    font-family: "Darker Grotesque", sans-serif;
-    font-size: 1.5rem;
+    font-family: var(--themeFontFamily2);
+    font-size: calc(var(--unitFontSize) * 1);
     color: var(--white1);
 }
 
 .planHeaderDescription {
-    font-family: "Alegreya Sans SC", sans-serif;
-    font-size: 1.5rem;
+    font-family: var(--themeFontFamily1);
+    font-size: calc(var(--unitFontSize) * 1.5);
     color: var(--white1);
 }
 
@@ -93,28 +92,31 @@
     align-items: center;
     flex-direction: column;
     padding: 20px 50px;
-    gap: 25px;
+    gap: 10px;
     border: 1px solid var(--gray2);
 }
 
 .planBodyPrice {
-    font-family: "Darker Grotesque", sans-serif;
-    font-size: 4.5rem;
+    font-family: var(--themeFontFamily2);
+    font-size: calc(var(--unitFontSize) * 4);
     color: var(--gray3);
 }
 
 .planBodyPerMonth {
-    font-family: "Darker Grotesque", sans-serif;
-    font-size: 1.5rem;
+    font-family: var(--themeFontFamily2);
+    font-size: calc(var(--unitFontSize) * 1.5);
     color: var(--gray3);
 }
 
 .planBodyBookNow {
-    padding: 10px 20px;
-    color: var(--white1);
-    font-family: "Darker Grotesque", sans-serif;
-    font-size: 1.5rem;
-    cursor: pointer;
+	width: fit-content;
+	background-color: var(--gray3);
+	border-radius: 5px;
+	padding: 10px 20px;
+
+	margin-top: 40px;
+	color: var(--white1);
+	font-size: calc(var(--unitFontSize) * 1);
 }
 
 .cardPlan:nth-child(1) .planBodyBookNow {
@@ -154,37 +156,12 @@
         right: -75px;
     }
 
-    .planHeaderSaleText {
-        font-size: 1rem;
-    }
-
-    .planHeaderType {
-        font-size: 1.25rem;
-    }
-
-    .planHeaderDescription {
-        font-size: 1.25rem;
-    }
-
     .planBody {
         padding: 20px;
-    }
-
-    .planBodyPrice {
-        font-size: 3.5rem;
-    }
-
-    .planBodyPerMonth {
-        font-size: 1.25rem;
-    }
-
-    .planBodyBookNow {
-        font-size: 1.25rem;
     }
 }
 
 /* desktops */
-
 @media screen and (min-width: 1025px) {
     .containerSection5 {
         padding: 75px 0;
@@ -209,31 +186,7 @@
         right: -125px;
     }
 
-    .planHeaderSaleText {
-        font-size: 1rem;
-    }
-
-    .planHeaderType {
-        font-size: 1.5rem;
-    }
-
-    .planHeaderDescription {
-        font-size: 1.5rem;
-    }
-
     .planBody {
         padding: 20px 50px;
-    }
-
-    .planBodyPrice {
-        font-size: 4.5rem;
-    }
-
-    .planBodyPerMonth {
-        font-size: 1.5rem;
-    }
-
-    .planBodyBookNow {
-        font-size: 1.5rem;
     }
 }

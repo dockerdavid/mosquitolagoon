@@ -142,6 +142,7 @@
 @media screen and (max-width: 768px) {
 	.containerSection6 {
 		height: auto;
+		padding-block: 5vh;
 	}
 
 	.section6 {
