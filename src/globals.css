@@ -48,6 +48,10 @@ body {
 
 	--black1: #191919;
 	--blackSoft: rgba(25, 25, 25, 0.6);
+	--blackSoft2: rgba(25, 25, 25, 0.8);
+
+	--alertError: #FF595A;
+	--alertSuccess: #26b360;
 
 	--themeFontFamily1: "Alegreya Sans SC", sans-serif;
 	--themeFontFamily2: "Darker Grotesque", sans-serif;

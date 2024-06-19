@@ -1,0 +1,51 @@
+.containerAlert {
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+	z-index: 1000;
+	display: flex;
+	flex-direction: column;
+
+	padding: 20px 40px;
+	border-radius: 5px;
+	gap: 10px;
+}
+
+.containerAlert p {
+	font-size: calc(var(--unitFontSize) * 1.2);
+	color: var(--white1);
+}
+
+.showAlert {
+	animation: show 2s linear forwards;
+}
+
+.hideAlert {
+	animation: hide 2s linear forwards;
+}
+
+.error {
+	background-color: var(--alertError);
+}
+
+.success {
+	background-color: var(--alertSuccess);
+}
+
+@keyframes show {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes hide {
+	0% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
