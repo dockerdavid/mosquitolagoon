@@ -2,11 +2,11 @@ import './footer.css'
 
 const Footer = () => {
 	return (
-		<footer className='footer'>
+		<footer className='footer' id='contact'>
 			<div className="footerContent">
 				<div className='containerFooterLogo'>
 					<img className='logoFooter' src={require('src/assets/img/logo2.png')} alt='logo' />
-					<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa earum atque minima harum voluptate deleniti velit facere minus eum quo.</p>
+					<p>Explore Mosquito Lagoon, a premier equestrian facility in Mims, Florida, offering top-tier boarding, training, and therapeutic care, along with exceptional event spaces and riding clinics.</p>
 				</div>
 
 				<div className='containerFooterLinks'>
@@ -30,9 +30,9 @@ const Footer = () => {
 				<div className='containerFooterLinks'>
 					<span>Address</span>
 
-					<a href="#example">Rejodani Street, Yogyakarta</a>
-					<a href="#example">t: (62) 274 - 7070 77</a>
-					<a href="#example">e: info@jaran.com</a>
+					<a href="#example">10016 Wellness Way Suite 100 Orlando, FL 32832</a>
+					<a href="#example">f: (407) 281 - 8455</a>
+					<a href="#example">e: admin@realtygroupfl.com</a>
 				</div>
 			</div>
 		</footer>
