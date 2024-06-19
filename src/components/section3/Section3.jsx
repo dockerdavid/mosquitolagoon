@@ -5,19 +5,19 @@ const Section3 = () => {
 		<div className='gridContainerSection2'>
 			<div className='cards'>
 				<div className='cardDetail'>
-					<h2 className='amountDetail'>75</h2>
+					<h2 className='amountDetail'>3</h2>
 					<span className='nameDetail'>Years Experience</span>
 				</div>
 				<div className='cardDetail'>
-					<h2 className='amountDetail'>1.709</h2>
+					<h2 className='amountDetail'>483</h2>
 					<span className='nameDetail'>Happy Clients</span>
 				</div>
 				<div className='cardDetail'>
-					<h2 className='amountDetail'>25</h2>
-					<span className='nameDetail'>Trainers</span>
+					<h2 className='amountDetail'>12</h2>
+					<span className='nameDetail'>Coaches</span>
 				</div>
 				<div className='cardDetail'>
-					<h2 className='amountDetail'>27</h2>
+					<h2 className='amountDetail'>2</h2>
 					<span className='nameDetail'>Award Winning</span>
 				</div>
 			</div>

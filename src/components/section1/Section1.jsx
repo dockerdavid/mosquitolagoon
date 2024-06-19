@@ -32,25 +32,22 @@ const Section1 = () => {
 							<a href="#"><span className="material-symbols-outlined">arrow_right</span> Home</a>
 						</li>
 						<li>
-							<a href="#"><span className="material-symbols-outlined">arrow_right</span> About</a>
+							<a href="#about"><span className="material-symbols-outlined">arrow_right</span> About</a>
 						</li>
 						<li>
-							<a href="#"><span className="material-symbols-outlined">arrow_right</span> Services</a>
+							<a href="#services"><span className="material-symbols-outlined">arrow_right</span> Services</a>
 						</li>
 						<li>
-							<a href="#"><span className="material-symbols-outlined">arrow_right</span> News</a>
+							<a href="#accomodation"><span className="material-symbols-outlined">arrow_right</span> Accomodation</a>
 						</li>
 						<li>
-							<a href="#"><span className="material-symbols-outlined">arrow_right</span> Pages</a>
-						</li>
-						<li>
-							<a href="#"><span className="material-symbols-outlined">arrow_right</span> Contact</a>
+							<a href="#contact"><span className="material-symbols-outlined">arrow_right</span> Contact</a>
 						</li>
 					</ul>
 
-					<button className='btnSearch'>
+					{/* <button className='btnSearch'>
 						<span className="material-symbols-outlined">search</span>
-					</button>
+					</button> */}
 				</nav>
 			</div>
 
@@ -58,11 +55,11 @@ const Section1 = () => {
 				<img src={require("src/assets/img/1.webp")} alt="home image" loading='eager' />
 				<div className='section1'>
 					<h1>
-						Best School <br/>
+						Elite Equestrian <br/>
 						Riding Horse
 					</h1>
 					<p>
-						Lorem ipsum dolor sit amet consectetur adipisicing elit
+						Top-tier boarding, training, therapeutic care, and event spaces.
 					</p>
 					<button>
 						<span>Learn More</span>
